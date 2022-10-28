@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8"/>
+	<title>Pong game</title>
+	<script src="p5.min.js"></script>
+	<script src="planck.js"></script>
+	<script src="p5.play.js"></script>
+</head>
+<body>
+	<script>
+		let net, ball, racketL, racketR;
+
+		function setup() {
+			createCanvas(800, 400);
+			background(0);
+
+			net = new Sprite();
+			net.shapeColor = "rgb(255, 255, 255)";
+			net.w = 2;
+			net.h = 400;
+
+			ball = new Sprite();
+			ball.shapeColor = "rgb(0, 200, 10)";
+			ball.d = 20;
+
+			racketL = new Sprite();
+			racketL.shapeColor = "rgb(0, 100, 100)";
+			racketL.w = 20;
+			racketL.h = 50;
+			racketL.x = 10;
+			racketL.y = 25;
+
+			racketR = new Sprite();
+			racketR.shapeColor = "rgb(0, 100, 100)";
+			racketR.w = 20;
+			racketR.h = 50;
+			racketR.x = 790;
+			racketR.y = 375;
+		}
+		function draw() {
+
+		}
+	</script>
+</body>
+</html>
